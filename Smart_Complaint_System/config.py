@@ -6,7 +6,7 @@ load_dotenv()
 
 MYSQL_HOST = os.getenv("MYSQL_HOST")
 
-MYSQL_PORT = os.getenv("MYSQL_PORT")
+MYSQL_PORT = int(os.getenv("MYSQL_PORT","3306"))
 
 MYSQL_USER = os.getenv("MYSQL_USER")
 
